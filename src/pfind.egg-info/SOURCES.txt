@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-src/pfind.py
-src/pfind.egg-info/PKG-INFO
-src/pfind.egg-info/SOURCES.txt
-src/pfind.egg-info/dependency_links.txt
-src/pfind.egg-info/entry_points.txt
-src/pfind.egg-info/top_level.txt
-tests/test_pfind.py
