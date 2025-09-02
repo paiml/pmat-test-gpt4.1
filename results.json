@@ -1,0 +1,1059 @@
+{
+  "complexity": {
+    "summary": {
+      "summary": {
+        "total_files": 1,
+        "total_functions": 37,
+        "median_cyclomatic": 1.0,
+        "median_cognitive": 0.0,
+        "max_cyclomatic": 26,
+        "max_cognitive": 255,
+        "p90_cyclomatic": 8,
+        "p90_cognitive": 35,
+        "technical_debt_hours": 138.5
+      },
+      "violations": [
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 35 exceeds maximum allowed complexity of 30",
+          "value": 35,
+          "threshold": 30,
+          "file": "./pyfind.py",
+          "line": 81,
+          "function": "__call__"
+        },
+        {
+          "severity": "error",
+          "rule": "cyclomatic-complexity",
+          "message": "Cyclomatic complexity of 26 exceeds maximum allowed complexity of 20",
+          "value": 26,
+          "threshold": 20,
+          "file": "./pyfind.py",
+          "line": 177,
+          "function": "parse_expr"
+        },
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 255 exceeds maximum allowed complexity of 30",
+          "value": 255,
+          "threshold": 30,
+          "file": "./pyfind.py",
+          "line": 177,
+          "function": "parse_expr"
+        },
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 47 exceeds maximum allowed complexity of 30",
+          "value": 47,
+          "threshold": 30,
+          "file": "./pyfind.py",
+          "line": 261,
+          "function": "walk"
+        },
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 54 exceeds maximum allowed complexity of 30",
+          "value": 54,
+          "threshold": 30,
+          "file": "./pyfind.py",
+          "line": 281,
+          "function": "main"
+        }
+      ],
+      "hotspots": [
+        {
+          "file": "./pyfind.py",
+          "function": "parse_expr",
+          "line": 177,
+          "complexity": 26,
+          "complexity_type": "cyclomatic"
+        }
+      ],
+      "files": [
+        {
+          "path": "./pyfind.py",
+          "total_complexity": {
+            "cyclomatic": 98,
+            "cognitive": 416,
+            "nesting_max": 24,
+            "lines": 316,
+            "halstead": null
+          },
+          "functions": [
+            {
+              "name": "parse_size",
+              "line_start": 19,
+              "line_end": 25,
+              "metrics": {
+                "cyclomatic": 2,
+                "cognitive": 2,
+                "nesting_max": 2,
+                "lines": 7,
+                "halstead": null
+              }
+            },
+            {
+              "name": "match_pattern",
+              "line_start": 26,
+              "line_end": 31,
+              "metrics": {
+                "cyclomatic": 2,
+                "cognitive": 2,
+                "nesting_max": 2,
+                "lines": 6,
+                "halstead": null
+              }
+            },
+            {
+              "name": "n_compare",
+              "line_start": 32,
+              "line_end": 40,
+              "metrics": {
+                "cyclomatic": 4,
+                "cognitive": 6,
+                "nesting_max": 4,
+                "lines": 9,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 43,
+              "line_end": 45,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 47,
+              "line_end": 49,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 50,
+              "line_end": 52,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 54,
+              "line_end": 56,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 57,
+              "line_end": 59,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 61,
+              "line_end": 62,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 63,
+              "line_end": 65,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 67,
+              "line_end": 68,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 69,
+              "line_end": 71,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 73,
+              "line_end": 74,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 75,
+              "line_end": 77,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 79,
+              "line_end": 80,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 81,
+              "line_end": 98,
+              "metrics": {
+                "cyclomatic": 8,
+                "cognitive": 35,
+                "nesting_max": 8,
+                "lines": 18,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 100,
+              "line_end": 101,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 3,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 102,
+              "line_end": 104,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 106,
+              "line_end": 107,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 3,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 108,
+              "line_end": 110,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 112,
+              "line_end": 113,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 114,
+              "line_end": 117,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 4,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 119,
+              "line_end": 120,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 121,
+              "line_end": 127,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 7,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 129,
+              "line_end": 130,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 131,
+              "line_end": 137,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 7,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__init__",
+              "line_start": 139,
+              "line_end": 140,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 141,
+              "line_end": 147,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 7,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 149,
+              "line_end": 151,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "__call__",
+              "line_start": 153,
+              "line_end": 155,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "action_print",
+              "line_start": 157,
+              "line_end": 160,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 4,
+                "halstead": null
+              }
+            },
+            {
+              "name": "action_print0",
+              "line_start": 161,
+              "line_end": 164,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 4,
+                "halstead": null
+              }
+            },
+            {
+              "name": "action_delete",
+              "line_start": 165,
+              "line_end": 175,
+              "metrics": {
+                "cyclomatic": 4,
+                "cognitive": 9,
+                "nesting_max": 5,
+                "lines": 11,
+                "halstead": null
+              }
+            },
+            {
+              "name": "parse_expr",
+              "line_start": 177,
+              "line_end": 256,
+              "metrics": {
+                "cyclomatic": 26,
+                "cognitive": 255,
+                "nesting_max": 24,
+                "lines": 80,
+                "halstead": null
+              }
+            },
+            {
+              "name": "print_help",
+              "line_start": 257,
+              "line_end": 259,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "walk",
+              "line_start": 261,
+              "line_end": 279,
+              "metrics": {
+                "cyclomatic": 9,
+                "cognitive": 47,
+                "nesting_max": 10,
+                "lines": 19,
+                "halstead": null
+              }
+            },
+            {
+              "name": "main",
+              "line_start": 281,
+              "line_end": 314,
+              "metrics": {
+                "cyclomatic": 10,
+                "cognitive": 54,
+                "nesting_max": 10,
+                "lines": 34,
+                "halstead": null
+              }
+            }
+          ],
+          "classes": []
+        }
+      ]
+    },
+    "files": [
+      {
+        "path": "./pyfind.py",
+        "total_complexity": {
+          "cyclomatic": 98,
+          "cognitive": 416,
+          "nesting_max": 24,
+          "lines": 316,
+          "halstead": null
+        },
+        "functions": [
+          {
+            "name": "parse_size",
+            "line_start": 19,
+            "line_end": 25,
+            "metrics": {
+              "cyclomatic": 2,
+              "cognitive": 2,
+              "nesting_max": 2,
+              "lines": 7,
+              "halstead": null
+            }
+          },
+          {
+            "name": "match_pattern",
+            "line_start": 26,
+            "line_end": 31,
+            "metrics": {
+              "cyclomatic": 2,
+              "cognitive": 2,
+              "nesting_max": 2,
+              "lines": 6,
+              "halstead": null
+            }
+          },
+          {
+            "name": "n_compare",
+            "line_start": 32,
+            "line_end": 40,
+            "metrics": {
+              "cyclomatic": 4,
+              "cognitive": 6,
+              "nesting_max": 4,
+              "lines": 9,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 43,
+            "line_end": 45,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 47,
+            "line_end": 49,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 50,
+            "line_end": 52,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 54,
+            "line_end": 56,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 57,
+            "line_end": 59,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 61,
+            "line_end": 62,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 63,
+            "line_end": 65,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 67,
+            "line_end": 68,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 69,
+            "line_end": 71,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 73,
+            "line_end": 74,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 75,
+            "line_end": 77,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 79,
+            "line_end": 80,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 81,
+            "line_end": 98,
+            "metrics": {
+              "cyclomatic": 8,
+              "cognitive": 35,
+              "nesting_max": 8,
+              "lines": 18,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 100,
+            "line_end": 101,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 3,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 102,
+            "line_end": 104,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 106,
+            "line_end": 107,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 3,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 108,
+            "line_end": 110,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 112,
+            "line_end": 113,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 114,
+            "line_end": 117,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 4,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 119,
+            "line_end": 120,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 121,
+            "line_end": 127,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 7,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 129,
+            "line_end": 130,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 131,
+            "line_end": 137,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 7,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__init__",
+            "line_start": 139,
+            "line_end": 140,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 141,
+            "line_end": 147,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 7,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 149,
+            "line_end": 151,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "__call__",
+            "line_start": 153,
+            "line_end": 155,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "action_print",
+            "line_start": 157,
+            "line_end": 160,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 4,
+              "halstead": null
+            }
+          },
+          {
+            "name": "action_print0",
+            "line_start": 161,
+            "line_end": 164,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 4,
+              "halstead": null
+            }
+          },
+          {
+            "name": "action_delete",
+            "line_start": 165,
+            "line_end": 175,
+            "metrics": {
+              "cyclomatic": 4,
+              "cognitive": 9,
+              "nesting_max": 5,
+              "lines": 11,
+              "halstead": null
+            }
+          },
+          {
+            "name": "parse_expr",
+            "line_start": 177,
+            "line_end": 256,
+            "metrics": {
+              "cyclomatic": 26,
+              "cognitive": 255,
+              "nesting_max": 24,
+              "lines": 80,
+              "halstead": null
+            }
+          },
+          {
+            "name": "print_help",
+            "line_start": 257,
+            "line_end": 259,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "walk",
+            "line_start": 261,
+            "line_end": 279,
+            "metrics": {
+              "cyclomatic": 9,
+              "cognitive": 47,
+              "nesting_max": 10,
+              "lines": 19,
+              "halstead": null
+            }
+          },
+          {
+            "name": "main",
+            "line_start": 281,
+            "line_end": 314,
+            "metrics": {
+              "cyclomatic": 10,
+              "cognitive": 54,
+              "nesting_max": 10,
+              "lines": 34,
+              "halstead": null
+            }
+          }
+        ],
+        "classes": []
+      }
+    ],
+    "top_files_limit": 10
+  },
+  "big_o": {
+    "summary": {
+      "analyzed_functions": 55,
+      "high_complexity_count": 5
+    },
+    "distribution": {
+      "O(1)": 0,
+      "O(log n)": 0,
+      "O(n)": 44,
+      "O(n log n)": 0,
+      "O(n\u00b2)": 2,
+      "O(n\u00b3)": 3,
+      "O(2^n)": 0,
+      "O(?)": 6
+    },
+    "high_complexity_functions": [
+      {
+        "file": "./pyfind.py",
+        "function": "main",
+        "line": 281,
+        "time_complexity": "O(n\u00b2)",
+        "space_complexity": "O(n)",
+        "confidence": 72
+      },
+      {
+        "file": "./pyfind.py",
+        "function": "main",
+        "line": 281,
+        "time_complexity": "O(n\u00b2)",
+        "space_complexity": "O(n)",
+        "confidence": 72
+      },
+      {
+        "file": "./pyfind.py",
+        "function": "action_delete",
+        "line": 165,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./pyfind.py",
+        "function": "action_delete",
+        "line": 165,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./pyfind.py",
+        "function": "expr",
+        "line": 276,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      }
+    ],
+    "pattern_matches": [],
+    "recommendations": [
+      "Found 2 functions with O(n\u00b2) complexity. Consider optimization."
+    ]
+  }
+}

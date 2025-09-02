@@ -1,33 +1,60 @@
-# Production-Ready Python CLI: pfind
+<a href="https://ds500.paiml.com/rankings/llms" title="LLM Rankings" style="text-decoration: none;">
+  <img src="./.github/header.svg" alt="LLM Rankings">
+</a>
 
-pfind is a command-line tool for traversing the filesystem, inspired by the Unix `find` utility. It allows users to search for files and directories with flexible filtering options.
+<h1 align="center"><a href="https://ds500.paiml.com/rankings/llms">GPT 4.1</a></h1>
+<h5 align="center">Model Evaluation</h5>
 
-## Features
-- Recursive directory traversal
-- Filter by name, type (file/dir), size, and more
-- Output results to stdout
-- Extensible and well-tested
+This repository holds the code output of GPT 4.1, used for evaluation with [PMAT](https://github.com/paiml/paiml-mcp-agent-toolkit).
 
-## Usage
-```sh
-pfind [OPTIONS] [PATH]
+Evaluations are posted at [Pragmatic AI Labs](https://ds500.paiml.com/rankings/llms).
+
+For details on the prompt used, check the [test.yaml](./test.yaml) file.
+
+
+> [!NOTE]
+> This repository does not accept Pull Requests
+
+## How the Overall Score is Calculated
+
+The overall score is calculated on a scale of 0-100 points using three key complexity metrics, each with a maximum penalty of 25 points:
+
+### Scoring Components
+
+| Component | Max Penalty | Calculation Method |
+|-----------|-------------|-------------------|
+| **Cognitive Complexity** | 25 points | Percentage of functions exceeding cognitive complexity thresholds |
+| **Cyclomatic Complexity** | 25 points | Percentage of functions exceeding cyclomatic complexity thresholds |
+| **Big-O Complexity** | 25 points | Percentage of functions with high algorithmic complexity (O(n²) or worse) |
+
+### Final Score Formula
+
+```
+Final Score = 100 - Cognitive Penalty - Cyclomatic Penalty - Big-O Penalty
 ```
 
-### Options
-- `-n`, `--name <pattern>`: Filter by filename (supports wildcards)
-- `-t`, `--type <f|d>`: Filter by type (file or directory)
-- `-s`, `--size <expr>`: Filter by size (e.g., `+10k`, `-1M`)
-- `-h`, `--help`: Show help message
+- **Minimum possible score**: 25/100 (when all three categories reach maximum penalty)
+- **Maximum possible score**: 100/100 (when no penalties are applied)
 
-## Installation
-```sh
-pip install .
+### Penalty Calculation Details
+
+Each penalty is calculated as:
+```
+Penalty = min(25, (affected_functions / total_functions) × 100)
 ```
 
-## Development
-- Lint: `ruff src tests`
-- Format: `black src tests`
-- Test: `pytest`
+- **Cognitive Complexity**: Functions with high nesting, branching, and logical complexity
+- **Cyclomatic Complexity**: Functions with excessive conditional paths and decision points
+- **Big-O Complexity**: Functions with O(n²), O(n³), or worse algorithmic complexity
 
-## License
-MIT
+### Evaluation Details
+
+- Repository: This codebase
+- Model: Check the ./test.yaml file for model details
+- Prompt: See ./test.yaml for the original prompt used
+- Results: Available at [LLM Rankings](https://ds500.paiml.com/rankings/llms)
+
+### About the Evaluation System
+
+The Real-World Code Score system evaluates AI-generated code across multiple dimensions to provide a comprehensive quality assessment. Unlike simple correctness checks, it analyzes real-world code quality factors that matter in
+production environments.
